@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Experiment Lifecycle - Day Prediction App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #ebf39e;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .container {
+      position: relative;
+      width: 750px;
+      height: 750px;
+      margin-top: 40px;
+      background: #ffffff;
+      border-radius: 50%;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .title {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .stage {
+      position: absolute;
+      width: 110px;
+      height: 110px;
+      background: #24d5b2;
+      color: #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 10px;
+      font-weight: bold;
+    }
+
+    /* Positioning 6 stages around a circle */
+    .idea     { top: 2%;   left: 50%; transform: translate(-50%, 0); }
+    .design   { top: 25%;  left: 85%; transform: translate(-50%, -50%); }
+    .develop  { top: 65%;  left: 85%; transform: translate(-50%, -50%); }
+    .style    { top: 90%;  left: 50%; transform: translate(-50%, -100%); }
+    .test     { top: 65%;  left: 15%; transform: translate(-50%, -50%); }
+    .enhance  { top: 25%;  left: 15%; transform: translate(-50%, -50%); }
+
+    /* Explanation section */
+    .explanation {
+      max-width: 850px;
+      margin: 40px 20px;
+      padding: 20px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    .explanation h2 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .explanation ul {
+      list-style: disc;
+      padding-left: 40px;
+      color: #333;
+      font-size: 15px;
+    }
+
+    .explanation li {
+      margin-bottom: 12px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Circular Diagram with 6 Stages -->
+  <div class="container">
+    <div class="stage idea">Idea</div>
+    <div class="stage design">Design</div>
+    <div class="stage develop">Develop</div>
+    <div class="stage style">Style</div>
+    <div class="stage test">Test</div>
+    <div class="stage enhance">Enhance</div>
+    <div class="title">Day Prediction App Lifecycle</div>
+  </div>
+
+  <!-- Explanation Section -->
+  <div class="explanation">
+    <h2>Explanation of Each Stage</h2>
+    <ul>
+      <li><strong>Idea:</strong> Define the purpose of the app — in this case, predicting how a user’s day might go with a fun message.</li>
+      <li><strong>Design:</strong> Create a basic HTML structure including headings, paragraphs, and containers.</li>
+      <li><strong>Develop:</strong> Add JavaScript logic to randomly select and display different prediction messages.</li>
+      <li><strong>Style:</strong> Use CSS to visually enhance the app with layouts, colors, fonts, and spacing.</li>
+      <li><strong>Test:</strong> Verify that the app works as expected across browsers and displays predictions correctly.</li>
+      <li><strong>Enhance:</strong> Add extra features like animations, local storage, or a “new prediction” button for better UX.</li>
+    </ul>
+  </div>
+
+</body>
+</html>
